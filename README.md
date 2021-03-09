@@ -4,16 +4,21 @@
 
 安装
 CentOS 7（非主要支持版本，请有条件的优先使用CentOS 8）
-yum install wget -y && wget https://raw.githubusercontent.com/secondw/Airport-toolkit/master/ssr_node_c7.sh && chmod +x ssr_node_c7.sh && ./ssr_node_c7.sh
+
+    yum install wget -y && wget https://raw.githubusercontent.com/secondw/Airport-toolkit/master/ssr_node_c7.sh && chmod +x ssr_node_c7.sh && ./ssr_node_c7.sh
 
 CentOS 8
-dnf install wget -y && wget https://raw.githubusercontent.com/secondw/Airport-toolkit/master/ssr_node_c8.sh && chmod +x ssr_node_c8.sh && ./ssr_node_c8.sh
+
+    dnf install wget -y && wget https://raw.githubusercontent.com/secondw/Airport-toolkit/master/ssr_node_c8.sh && chmod +x ssr_node_c8.sh && ./ssr_node_c8.sh
 
 卸载
-systemctl disable ssr_node && \rm /usr/lib/systemd/system/ssr_node.service && \rm -rf /soft/shadowsocks
+
+    systemctl disable ssr_node && \rm /usr/lib/systemd/system/ssr_node.service && \rm -rf /soft/shadowsocks
 
 服务启动
-systemctl start ssr_node
+
+    systemctl start ssr_node
 
 服务停止
-systemctl stop ssr_node
+
+    systemctl stop ssr_node
