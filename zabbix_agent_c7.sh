@@ -2,8 +2,8 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 cat << "EOF"
-Author: M1Screw
-Github: https://github.com/M1Screw/Airport-toolkit                                 
+Author: secondw
+Github: https://github.com/secondw/Airport-toolkit                                 
 EOF
 echo "Zabbix agent installation script for CentOS 7 x64"
 
