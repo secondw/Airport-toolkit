@@ -2,8 +2,8 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 cat << "EOF"
-Author: M1Screw
-Github: https://github.com/M1Screw/Airport-toolkit                               
+Author: secondw
+Github: https://github.com/secondw/Airport-toolkit                               
 EOF
 echo "Shadowsocksr server installation script for CentOS 7 x64"
 [ $(id -u) != "0" ] && { echo "Error: You must be root to run this script!"; exit 1; }
@@ -93,7 +93,7 @@ echo "Installing Python3.6..."
 yum install python36 python36-pip -y
 echo "Installing Shadowsocksr server from GitHub..."
 mkdir /soft
-cd /tmp && git clone -b testing https://github.com/Anankke/shadowsocks-mod.git
+cd /tmp && git clone -b manyuser https://github.com/secondw/shadowsocks-mod.git
 mv shadowsocks-mod shadowsocks
 mv -f shadowsocks /soft
 cd /soft/shadowsocks
